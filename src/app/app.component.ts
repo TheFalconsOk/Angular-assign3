@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { timeStamp, time } from 'console';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +15,8 @@ export class AppComponent {
     this.displayFlag = !this.displayFlag;
     this.logArray.push(new Date().toLocaleString());
     this.arrayLen = this.logArray.length;
-    console.log(this.arrayLen)
   }
 
   getColour() {
     return this.arrayLen > 4 ? 'green' : 'yellow';}
 }
-
-
